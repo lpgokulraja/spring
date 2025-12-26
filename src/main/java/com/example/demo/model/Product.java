@@ -111,29 +111,7 @@ class ProductDetail {
     }
 }
 
-@Entity
-@Table(name = "category")
-class Category {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private String name;
-
-    public Category() {}
-
-    public Category(String name) {
-        this.name = name;
-    }
-}
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
+// Category moved to its own public class `Category.java`
 
 @Entity
 @Table(name = "tag")
